@@ -21,7 +21,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 HttpMethod.DELETE,
                 HttpMethod.PUT};
 
-        config.exposeIdsFor(Book.class);
+        config.exposeIdsFor(Book.class) ;
 
         disableHttpMethods(Book.class, config, theUnsupportedActions);
 
